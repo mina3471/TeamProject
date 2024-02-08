@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+    <script src="https://kit.fontawesome.com/e5b57ad8bc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/fragment/sideBar.css}" href="../../static/css/fragment/sideBar.css">
+    <link rel="stylesheet" th:href="@{/css/fragment/header.css}" href="../../static/css/fragment/header.css">
+    <script th:src="@{/js/sideHeader.js}" src="../../static/js/sideHeader.js" defer></script>
+
+</head>
+
+
+<header>
+    <div class="header">
+        <div class="logo">
+            <a href="#" id="logoImage">
+                <img src="../../static/image/delivery.jpg" alt=""/>
+            </a>
+        </div>
+
+        <div class="header-list">
+            <div class="profile" id="loginStatus"></div>
+            <button class="menu-toggle-button" onclick="toggleNav()">메뉴</button>
+        </div>
+
+    </div>
+
+</header>
+
+<body>
+<nav class="sideNav">
+    <ul class="sideBar">
+        <li> <a href="#"><i class="fa-solid fa-house"></i><span>홈</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-chart-column"></i><span>전체현황</span></a></li>
+
+        <li class="menu-group">
+            <a href="#"><i class="fa-solid fa-store"></i><span>가게관리</span></a>
+            <ul class="sideBar-list">
+                <li><a href="#">메뉴.옵션 관리</a></li>
+                <li><a href="#">메뉴 할인 관리</a></li>
+                <li><a href="#">혜택관리</a></li>
+                <li><a href="#">쿠폰내역</a></li>
+                <li><a href="#">리뷰관리</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#"><i class="fa-solid fa-person"></i>고객관리</a></li>
+        <li><a href="#"><i class="fa-solid fa-pause"></i>영업임시중지</a></li>
+
+        <li class="menu-group">
+            <a href="#"><i class="fas fa-star"></i><span>가게메뉴판 편집</span></a>
+            <ul class="sideBar-list">
+                <li><a href="#">메뉴.옵션 관리</a></li>
+                <li><a href="#">메뉴 할인 관리</a></li>
+                <li><a href="#">혜택관리</a></li>
+                <li><a href="#">쿠폰내역</a></li>
+                <li><a href="#">리뷰관리</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#"><i class="fa-solid fa-percent"></i>메뉴 할인 관리</a></li>
+        <li><a href="#"><i class="fas fa-star"></i>혜택관리</a></li>
+        <li><a href="#"><i class="fas fa-star"></i>쿠폰내역</a></li>
+        <li><a href="#"><i class="fas fa-star"></i>리뷰관리</a></li>
+        <li><a href="#"><i class="fa-solid fa-check"></i>공지.한마디</a></li>
+        <li><a href="#"><i class="fa-solid fa-list-check"></i>주문내역</a></li>
+
+    </ul>
+</nav>
+
+
+
+
+
+</body>
+
+
+</html>
